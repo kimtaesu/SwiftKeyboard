@@ -15,7 +15,7 @@ class ViewController: UIViewController, HasDisposeBag {
         super.viewDidLoad()
         self.registerAutomaticKeyboardConstraints { [weak self] height, appear in
             guard let self = self else { return }
-//            self.bottomBtn.transform = appear ? CGAffineTransform(translationX: 0, y: -height) : .identity
+            self.bottomBtn.transform = appear ? CGAffineTransform(translationX: 0, y: -height) : .identity
         }
         // Do any additional setup after loading the view, typically from a nib.
     }
